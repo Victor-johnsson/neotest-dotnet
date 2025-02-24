@@ -32,6 +32,7 @@ function BuildSpecUtils.create_single_spec(position, proj_root, filter_arg, dotn
   local command = {
     "dotnet",
     "run",
+    "--project",
     proj_root,
     "--",
     filter_arg,
