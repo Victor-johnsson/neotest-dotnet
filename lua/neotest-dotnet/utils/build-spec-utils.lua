@@ -31,8 +31,9 @@ function BuildSpecUtils.create_single_spec(position, proj_root, filter_arg, dotn
 
   local command = {
     "dotnet",
-    "test",
+    "run",
     proj_root,
+    "--",
     filter_arg,
     "--results-directory",
     vim.fn.fnamemodify(results_path, ":h"),
